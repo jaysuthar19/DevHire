@@ -17,16 +17,17 @@ const notificationRoutes = require("./routes/notificationRoutes");
 
 const app = express();
 
-// CONNECT DB
+// CONNECT DATABASE
 connectDB();
 
 // MIDDLEWARE
 app.use(express.json());
 
+// CORS
 app.use(
   cors({
     origin: [
-      process.env.CLIENT_URL,
+      "https://dev-hire-liard-five.vercel.app",
       "http://localhost:5173",
     ],
     credentials: true,
@@ -34,9 +35,12 @@ app.use(
 );
 
 // STATIC FILES
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+app.use(
+  "/uploads",
+  express.static(path.join(__dirname, "/uploads"))
+);
 
-// ROUTES
+// API ROUTES
 app.use("/api/auth", authRoutes);
 app.use("/api/jobs", jobRoutes);
 app.use("/api/user", userRoutes);
@@ -49,40 +53,57 @@ app.get("/", (req, res) => {
   res.send("DevHire API Running...");
 });
 
-// SERVER
+// CREATE HTTP SERVER
 const server = http.createServer(app);
 
 // SOCKET.IO
 const io = new Server(server, {
   cors: {
     origin: [
-      process.env.CLIENT_URL,
+      "https://dev-hire-liard-five.vercel.app",
       "http://localhost:5173",
     ],
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
+// SOCKET EVENTS
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 
+  // JOIN ROOM
   socket.on("joinRoom", ({ userId, otherUserId }) => {
-    const roomId = [userId, otherUserId].sort().join("_");
+    const roomId = [userId, otherUserId]
+      .sort()
+      .join("_");
+
     socket.join(roomId);
   });
 
+  // SEND MESSAGE
   socket.on("sendMessage", (data) => {
-    const roomId = [data.sender, data.receiver].sort().join("_");
-    io.to(roomId).emit("receiveMessage", data);
+    const roomId = [data.sender, data.receiver]
+      .sort()
+      .join("_");
+
+    io.to(roomId).emit(
+      "receiveMessage",
+      data
+    );
   });
 
+  // DISCONNECT
   socket.on("disconnect", () => {
     console.log("User disconnected");
   });
 });
 
+// START SERVER
 const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(
+    `Server running on port ${PORT}`
+  );
 });

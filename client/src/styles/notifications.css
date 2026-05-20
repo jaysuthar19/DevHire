@@ -1,0 +1,135 @@
+/* =========================
+   NOTIFICATIONS PAGE
+========================= */
+
+.notificationsPage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.notificationsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.notificationsHeader {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.headerIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: rgba(234,179,8,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #facc15;
+  font-size: 22px;
+}
+
+.tag {
+  color: #facc15;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.notificationsHeader h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.notificationsHeader p {
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+/* LIST */
+.notificationList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.notificationCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.2s;
+}
+
+.notificationCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59,130,246,0.3);
+}
+
+/* UNREAD */
+.notificationCard.unread {
+  background: rgba(234,179,8,0.08);
+  border: 1px solid rgba(234,179,8,0.2);
+}
+
+/* TEXT */
+.notificationText p {
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+.notificationText span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* BUTTON */
+.markBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #22c55e;
+  color: white;
+
+  padding: 8px 12px;
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.markBtn:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+/* EMPTY */
+.emptyState {
+  text-align: center;
+  padding: 60px;
+  color: #94a3b8;
+}
+
+/* CENTER PAGE */
+.centerPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #94a3b8;
+}

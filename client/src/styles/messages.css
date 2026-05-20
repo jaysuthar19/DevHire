@@ -1,0 +1,93 @@
+.messagesPage {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 40px 20px;
+}
+
+.messagesContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER */
+.messagesHeader {
+  margin-bottom: 30px;
+}
+
+.messagesHeader .tag {
+  color: #3b82f6;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.messagesHeader h1 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.messagesHeader p {
+  color: #94a3b8;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.primaryBtn {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primaryBtn:hover {
+  transform: scale(1.05);
+}
+
+/* CARD */
+.messageCard {
+  margin-top: 30px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* TOP BAR */
+.messageTop {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.messageTop h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.messageTop p {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* EMPTY STATE */
+.emptyState {
+  padding: 80px 20px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.emptyIcon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 16px;
+  background: rgba(59,130,246,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}

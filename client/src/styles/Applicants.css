@@ -1,0 +1,107 @@
+.app-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.app-card {
+  background: linear-gradient(145deg, #0f172a, #0b1220);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  transition: 0.2s;
+}
+
+.app-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59,130,246,0.3);
+}
+
+/* TOP */
+.app-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* USER */
+.app-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-user h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.app-user p {
+  font-size: 13px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* SELECT */
+.app-card select {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skills span {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(59,130,246,0.12);
+  border: 1px solid rgba(59,130,246,0.2);
+  color: #93c5fd;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.actions a {
+  color: #60a5fa;
+  font-size: 13px;
+}
+
+.actions button {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  transform: scale(1.05);
+}

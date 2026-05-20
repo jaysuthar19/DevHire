@@ -1,0 +1,126 @@
+/* =========================
+   USER PROFILE PAGE
+========================= */
+
+.userProfilePage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.userProfileContainer {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.userCard {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+}
+
+/* NAME */
+.userName {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.userRole {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* BIO */
+.userBio {
+  margin-top: 25px;
+  padding: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* SECTION TITLE */
+.sectionTitle {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* SKILLS */
+.skillWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skillTag {
+  background: rgba(59,130,246,0.15);
+  border: 1px solid rgba(59,130,246,0.25);
+  color: #93c5fd;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* ACTION BUTTONS */
+.actionRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* BASE BUTTON */
+.btn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+/* BUTTON TYPES */
+.btn-dark {
+  background: #111827;
+  color: white;
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-green {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-purple {
+  background: #8b5cf6;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* LOADING / EMPTY */
+.centerPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}

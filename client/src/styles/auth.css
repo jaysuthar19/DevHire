@@ -1,0 +1,231 @@
+/* ================= AUTH PAGE WRAPPER ================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1e293b, #020617 60%);
+  padding: 20px;
+}
+
+/* ================= AUTH CARD ================= */
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* ================= TITLE ================= */
+
+.auth-card h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.auth-card p {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: #0b1220;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  outline: none;
+  transition: 0.2s;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+/* ================= BUTTON ================= */
+
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  font-weight: 700;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.auth-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(59,130,246,0.3);
+}
+
+/* ================= FOOT TEXT ================= */
+
+.auth-footer {
+  text-align: center;
+  margin-top: 15px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.auth-footer a {
+  color: #3b82f6;
+}
+
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  padding: 20px;
+}
+
+.authCard {
+  width: 100%;
+  max-width: 420px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.authCard h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.authCard p {
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.authForm input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+  outline: none;
+}
+
+.authForm input:focus {
+  border-color: #3b82f6;
+}
+
+.authForm button {
+  padding: 12px;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.authForm button:hover {
+  background: #2563eb;
+} 
+
+/* =========================
+   AUTH SYSTEM (LOGIN + REGISTER)
+========================= */
+
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1120;
+  padding: 20px;
+  color: white;
+}
+
+.authCard {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+}
+
+/* HEADER */
+.authCard h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.authCard p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.authForm input,
+.authForm select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  color: white;
+  outline: none;
+  transition: 0.2s;
+}
+
+.authForm input:focus,
+.authForm select:focus {
+  border-color: rgba(59,130,246,0.5);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+/* BUTTON */
+.authForm button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.authForm button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}

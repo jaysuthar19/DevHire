@@ -1,0 +1,74 @@
+.dashboard-card {
+  position: relative;
+  background: linear-gradient(145deg, #0f172a, #0b1220);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px;
+  color: white;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* GLOW EFFECT */
+.dashboard-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 60%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* TOP */
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dashboard-title {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.dashboard-value {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+/* ICON */
+.dashboard-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+}
+
+/* BOTTOM */
+.dashboard-bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #22c55e;
+  border-radius: 50%;
+}

@@ -1,0 +1,152 @@
+/* =========================
+   MY JOBS PAGE (RECRUITER)
+========================= */
+
+.myJobsPage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.myJobsContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.myJobsHeader {
+  margin-bottom: 30px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(59,130,246,0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59,130,246,0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.myJobsHeader h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.myJobsHeader p {
+  color: #94a3b8;
+}
+
+/* EMPTY STATE */
+.emptyBox {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.emptyIcon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.emptyBox h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.emptyBox p {
+  color: #94a3b8;
+}
+
+/* JOB ITEM */
+.jobItem {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: 0.25s ease;
+}
+
+.jobItem:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59,130,246,0.3);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* TOP */
+.jobTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* TEXT */
+.jobTitle {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.jobCompany {
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* TAGS */
+.jobTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tagBox {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* BUTTON */
+.jobTop button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.jobTop button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .jobTop {
+    flex-direction: column;
+  }
+
+  .jobTop button {
+    width: 100%;
+    justify-content: center;
+  }
+}

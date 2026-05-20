@@ -1,0 +1,86 @@
+/* =========================
+   SAVED JOBS PAGE
+========================= */
+
+.savedPage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.savedContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.savedHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.savedHeader h1 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.savedHeader p {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* ICON BOX */
+.iconBox {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+  box-shadow: 0 10px 30px rgba(236,72,153,0.2);
+  font-size: 20px;
+}
+
+/* EMPTY STATE */
+.emptyState {
+  text-align: center;
+  padding: 80px 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  border-radius: 18px;
+}
+
+.bigIcon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.emptyState h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.emptyState p {
+  color: #94a3b8;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* GRID */
+.jobsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 900px) {
+  .jobsGrid {
+    grid-template-columns: 1fr;
+  }
+}

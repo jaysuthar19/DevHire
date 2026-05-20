@@ -1,0 +1,77 @@
+.edit-container {
+  min-height: 100vh;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.edit-box {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(145deg, #0f172a, #0b1220);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.edit-box h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+/* FORM */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-form label {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.edit-form input,
+.edit-form textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.edit-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus {
+  border-color: rgba(59,130,246,0.4);
+  background: rgba(255,255,255,0.07);
+}
+
+/* FILE INPUT */
+.edit-form input[type="file"] {
+  padding: 8px;
+}
+
+/* BUTTON */
+.edit-form button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.edit-form button:hover {
+  transform: scale(1.03);
+}

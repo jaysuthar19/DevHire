@@ -1,0 +1,152 @@
+/* =========================
+   RECRUITER DASHBOARD
+========================= */
+
+.recruiterPage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.recruiterContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.recruiterHeader {
+  margin-bottom: 30px;
+}
+
+.recruiterHeader .tag {
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.recruiterHeader h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.recruiterHeader p {
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+/* STATS GRID */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* STAT CARD */
+.statCard {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 18px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59,130,246,0.3);
+}
+
+.statCard p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.statCard h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 8px;
+}
+
+/* ICON BOX */
+.iconBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COLOR TYPES */
+.statCard.blue .iconBox {
+  background: rgba(59,130,246,0.15);
+  color: #60a5fa;
+}
+
+.statCard.pink .iconBox {
+  background: rgba(236,72,153,0.15);
+  color: #f472b6;
+}
+
+.statCard.purple .iconBox {
+  background: rgba(139,92,246,0.15);
+  color: #a78bfa;
+}
+
+/* INSIGHT CARD */
+.insightCard {
+  margin-top: 30px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.insightCard h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.insightCard p {
+  color: #94a3b8;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* BADGES */
+.badgeWrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.badge {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+/* CENTER */
+.centerPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #94a3b8;
+}

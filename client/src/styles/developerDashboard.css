@@ -1,0 +1,108 @@
+.dashPage {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 20px;
+}
+
+.dashContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER */
+.dashHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashHeader h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.dashHeader p {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* BADGE */
+.dashBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(59,130,246,0.15);
+  border: 1px solid rgba(59,130,246,0.25);
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #60a5fa;
+  font-size: 13px;
+}
+
+/* LOADING */
+.loading {
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* GRID */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
+.statCard {
+  background: linear-gradient(145deg, #0f172a, #0b1220);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(59,130,246,0.3);
+}
+
+/* ICON */
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* COLORS */
+.statCard.blue .iconBox {
+  background: rgba(59,130,246,0.15);
+  color: #60a5fa;
+}
+
+.statCard.pink .iconBox {
+  background: rgba(236,72,153,0.15);
+  color: #f472b6;
+}
+
+.statCard.purple .iconBox {
+  background: rgba(139,92,246,0.15);
+  color: #a78bfa;
+}
+
+.statCard h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.statCard p {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 4px;
+}

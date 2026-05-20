@@ -1,0 +1,107 @@
+/* ================= JOBS PAGE ================= */
+
+.jobsPage {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 20px;
+}
+
+.jobsContainer {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= HERO ================= */
+
+.jobsHero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.jobsHero h1 {
+  font-size: 36px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jobsHero p {
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+/* ================= SEARCH ================= */
+
+.searchBox {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+
+  margin-bottom: 25px;
+}
+
+.searchBox input,
+.searchBox select {
+  padding: 10px;
+  border-radius: 8px;
+
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+
+  outline: none;
+  flex: 1;
+  min-width: 160px;
+}
+
+.searchBox button {
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.searchBox button:hover {
+  background: #2563eb;
+}
+
+/* ================= JOB LIST ================= */
+
+.jobsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 🔥 THIS FIXES YOUR CARD TOUCH ISSUE */
+}
+
+.jobsList h2 {
+  margin-bottom: 5px;
+}
+
+.jobsList p {
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.emptyJobs {
+  text-align: center;
+  padding: 40px;
+
+  color: #94a3b8;
+  border: 1px dashed #334155;
+  border-radius: 10px;
+}

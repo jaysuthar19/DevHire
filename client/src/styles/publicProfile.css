@@ -1,0 +1,112 @@
+/* =========================
+   PUBLIC PROFILE
+========================= */
+
+.publicProfilePage {
+  min-height: 100vh;
+  background: #0b1120;
+  color: white;
+  padding: 20px;
+}
+
+.publicProfileCard {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+/* HEADER */
+.publicHeader h1 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.publicHeader p {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* SECTION */
+.section {
+  margin-top: 25px;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* BOX */
+.box {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 12px;
+  border-radius: 12px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* SKILLS */
+.skillWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillTag {
+  background: rgba(59,130,246,0.15);
+  color: #93c5fd;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid rgba(59,130,246,0.2);
+}
+
+/* LINKS */
+.linkWrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.linkWrap a {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.linkWrap a:hover {
+  background: rgba(59,130,246,0.2);
+  border-color: rgba(59,130,246,0.4);
+}
+
+/* RESUME */
+.resumeFrame {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* MUTED TEXT */
+.muted {
+  color: #94a3b8;
+}
+
+/* CENTER */
+.centerPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #94a3b8;
+}

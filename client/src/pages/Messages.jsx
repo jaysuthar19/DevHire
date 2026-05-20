@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/Messages.css";
+import "../styles/messages.css";
 
 export default function Messages() {
   const navigate = useNavigate();

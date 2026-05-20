@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import API from "../api";
 import { useNavigate } from "react-router-dom";
-import "../styles/Inbox.css";
+import "../styles/inbox.css";
 
 export default function Inbox() {
   const [convos, setConvos] = useState([]);
